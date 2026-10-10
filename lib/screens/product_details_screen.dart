@@ -19,6 +19,7 @@ class ProductDetailsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Product Details'),
+        
         actions: [
           IconButton(
             icon: const Icon(Icons.shopping_cart),

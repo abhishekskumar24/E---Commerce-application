@@ -51,10 +51,13 @@ class CartProvider extends ChangeNotifier {
 
         for (final entry in data) {
           final product = Product.fromJson(
+
             Map<String, dynamic>.from(entry['product']),
           );
 
-          _items[product.id] = CartItem(
+          _items[product.id] = CartItem(   
+
+            
             product: product,
             quantity: entry['quantity'] as int,
           );

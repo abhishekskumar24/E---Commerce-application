@@ -15,7 +15,7 @@ class Product {
     required this.image,
   });
 
-  factory Product.fromJson(Map<String, dynamic> json) {
+  factory Product.fromJson(Map<String, dynamic> json) { 
     return Product(
       id: json['id'] as int,
       title: json['title'] as String,

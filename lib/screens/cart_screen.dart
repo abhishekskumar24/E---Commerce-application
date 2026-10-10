@@ -16,6 +16,7 @@ class CartScreen extends StatelessWidget {
       ),
       body: Consumer<CartProvider>(
         builder: (context, cart, child) {
+          
           if (cart.items.isEmpty) {
             return const Center(
               child: Column(
