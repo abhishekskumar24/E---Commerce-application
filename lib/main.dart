@@ -14,6 +14,7 @@ void main() {
           create: (_) => CartProvider(),
         ),
         ChangeNotifierProvider(
+    
           create: (_) => ThemeProvider(),
         ),
       ],

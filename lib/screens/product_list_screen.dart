@@ -66,9 +66,9 @@ class _ProductListScreenState
           children: [
             Text(
               'ShopEasy',
-              style: TextStyle(
+                      style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                      fontSize: 23,
               ),
             ),
             Text(
@@ -98,7 +98,7 @@ class _ProductListScreenState
                 children: [
                   IconButton(
                     icon: const Icon(
-                      Icons.shopping_bag_outlined,
+                            Icons.shopping_bag_outlined,
                     ),
                     onPressed: () {
                       Navigator.push(
@@ -149,10 +149,10 @@ class _ProductListScreenState
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const Icon(
-                      Icons.wifi_off_rounded,
-                      size: 55,
-                    ),
+                    // const Icon(
+                    //   Icons.wifi_off_rounded,
+                    //   size: 55,
+                    // ),
                     const SizedBox(height: 12),
                     const Text('Unable to load products'),
                     const SizedBox(height: 12),
@@ -186,7 +186,7 @@ class _ProductListScreenState
 
             final matchesCategory =
                 selectedCategory == 'All' ||
-                product.category == selectedCategory;
+                     product.category == selectedCategory;
 
             return matchesSearch && matchesCategory;
           }).toList();
@@ -350,7 +350,7 @@ class _ProductListScreenState
 
                     if (visibleProducts.isEmpty) {
                       return Padding(
-                        padding: const EdgeInsets.all(32),
+                             padding: const EdgeInsets.all(32),
                         child: Column(
                           children: [
                             const Icon(
